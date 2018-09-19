@@ -23,7 +23,7 @@ object caramelo {
 	
 	method precio() { return 1 }
 	method peso() { return peso }
-	method mordisco() { peso = peso - 1 }
+	method mordisco() {peso -= 1}
 	method gusto() { return "frutilla" }
 	method libreGluten() { return true }
 }

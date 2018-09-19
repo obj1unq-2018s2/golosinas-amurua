@@ -33,10 +33,19 @@ object mariano {
 	
 	method pesoGolosinas() = bolsaGolosinas.sum({golosina => golosina.peso()})
 	
-	method golosinasFaltantes(golosinasDeseadas) {
+	method gustosFaltantes(golosinasDeseadas) {
 		var lr = golosinasDeseadas
 		lr.removeAll(bolsaGolosinas)
 		
 		return lr	
+	}
+	
+	method golosinasFaltantes(gustosDeseados) {
+		var lr = gustosDeseados
+		var gustosBolsa = bolsaGolosinas.map({golosina => golosina.gusto()})
+		
+		lr.removeAll(gustosBolsa)
+		
+		return gustosBolsa	
 	}
 }
