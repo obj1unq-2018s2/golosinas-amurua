@@ -1,0 +1,31 @@
+import mariano.*
+import golosinas.*
+
+describe "test de tuttifrutti"{
+	
+	test "peso inicial"{
+		assert.equals(5, tuttifrutti.peso())
+	}
+	
+	test "precio"{
+		tuttifrutti.libreGluten(true)
+		assert.equals(7, tuttifrutti.precio())
+		tuttifrutti.libreGluten(false)
+		assert.equals(10, tuttifrutti.precio())
+	}
+	
+	test "libre de gluten"{
+		tuttifrutti.libreGluten(true)
+		assert.equals(true, tuttifrutti.libreGluten())
+	}
+	
+	test "mordisco"{
+		tuttifrutti.mordisco()
+		assert.equals("chocolate", tuttifrutti.gusto())
+		tuttifrutti.mordisco()
+		assert.equals("naranja", tuttifrutti.gusto())
+		tuttifrutti.mordisco()
+		assert.equals("frutilla", tuttifrutti.gusto())
+	}
+	
+}

@@ -1,0 +1,36 @@
+import mariano.*
+import golosinas.*
+
+describe "test de golosina bañada"{
+	
+	test "peso inicial"{
+		golosinaBaniada.baniaA(caramelo)
+		assert.equals(9, golosinaBaniada.peso())
+	}
+	
+	test "precio"{
+		golosinaBaniada.baniaA(caramelo)
+		assert.equals(3, golosinaBaniada.precio())
+	}
+	
+	test "gusto"{
+		golosinaBaniada.baniaA(caramelo)
+		assert.equals("frutilla", golosinaBaniada.gusto())
+	}
+	
+	test "libre de gluten"{
+		golosinaBaniada.baniaA(caramelo)
+		assert.equals(true, golosinaBaniada.libreGluten())
+	}
+	
+	test "mordisco"{
+		golosinaBaniada.baniaA(caramelo)
+		golosinaBaniada.mordisco()
+		assert.equals(6, golosinaBaniada.peso())
+		golosinaBaniada.mordisco()
+		assert.equals(3, golosinaBaniada.peso())
+		golosinaBaniada.mordisco()
+		assert.equals(2, golosinaBaniada.peso())
+	}
+	
+}

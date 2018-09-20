@@ -34,7 +34,7 @@ object chupetin {
 	method precio() { return 2 }
 	method peso() { return peso }
 	method mordisco() {
-		if(not self.peso() < 2){
+		if(self.peso() > 2){
 			peso = peso * 0.9
 		}
 	}
@@ -54,7 +54,7 @@ object oblea {
 			peso = peso / 4
 		}
 	}
-	method gusto() { return "vainillla" }
+	method gusto() { return "vainilla" }
 	method libreGluten() { return false }
 }
 
