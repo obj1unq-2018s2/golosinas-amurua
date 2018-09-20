@@ -21,6 +21,8 @@ describe "test de caramelo"{
 	test "mordisco"{
 		caramelo.mordisco()
 		assert.equals(4, caramelo.peso())
+		caramelo.mordisco()
+		assert.equals(3, caramelo.peso())
 	}
 }
 

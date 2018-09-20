@@ -99,11 +99,6 @@ object tuttifrutti {
 	method precio() = if(libreGluten) 7 else 10
 	method peso() { return peso }
 	method mordisco() {
-		if(peso > 70){
-			peso = peso / 2
-		}else{
-			peso = peso / 4
-		}
 		if(saborActual == "frutilla"){
 			saborActual = "chocolate"
 		}else if(saborActual == "chocolate"){

@@ -21,6 +21,8 @@ describe "test de alfajor"{
 	test "mordisco"{
 		alfajor.mordisco()
 		assert.equals(240, alfajor.peso())
+		alfajor.mordisco()
+		assert.equals(192, alfajor.peso())
 	}
 	
 }

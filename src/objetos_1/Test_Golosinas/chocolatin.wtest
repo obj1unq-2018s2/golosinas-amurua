@@ -4,13 +4,17 @@ import golosinas.*
 describe "test de chocolatin"{
 	
 	test "peso inicial"{
-		chocolatin.pesoInicial(50)
-		assert.equals(50, chocolatin.peso())
+		chocolatin.pesoInicial(40)
+		assert.equals(40, chocolatin.peso())
+		chocolatin.pesoInicial(100)
+		assert.equals(100, chocolatin.peso())		
 	}
 	
 	test "precio"{
-		chocolatin.pesoInicial(50)
-		assert.equals(25, chocolatin.precio())
+		chocolatin.pesoInicial(40)
+		assert.equals(20, chocolatin.precio())
+		chocolatin.pesoInicial(100)
+		assert.equals(50, chocolatin.precio())
 	}
 	
 	test "gusto"{
@@ -27,8 +31,6 @@ describe "test de chocolatin"{
 		assert.equals(48, chocolatin.peso())
 		chocolatin.mordisco()
 		assert.equals(46, chocolatin.peso())
-		chocolatin.mordisco()
-		assert.equals(44, chocolatin.peso())
 	}
 	
 }
