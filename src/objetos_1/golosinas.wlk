@@ -91,6 +91,9 @@ object golosinaBaniada {
 	method libreGluten() { return golosinaInterior.libreGluten()}	
 }
 
+// Esto no escala, aca pensaste en 3 sabores solos,
+// ¿pero si las pastillas mañana tuviera 10 sabores?.
+// La idea es solucionarlo con colecciones!.
 object tuttifrutti {
 	var peso = 5
 	var property libreGluten = false
